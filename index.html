@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert you currency</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">My Currency Converter</div>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Choose a currency to Convert</h1>
+      <form action="/action.php" method="get">
+        <div class="masterContiner">
+          <div class="container2">
+            <div>
+              <label for="quantity"> Choose a quantity</label><br />
+              <input type="number" name="quantity" min="1" max="10" />
+            </div>
+            <div><label for="currency"> Choose a currency</label><br /></div>
+            <div>
+              <button class="btn" type="submit">Submit</button>
+            </div>
+          </div>
+          <div class="container3">
+            <img src="img.png" alt="Your Image" class="rightImage" />
+          </div>
+        </div>
+        <div class="output">
+          <h2>Here is Your converted values in different currencies</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Currency</th>
+                <th>Code</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <!-- <div class="loader">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+            <div class="bar7"></div>
+            <div class="bar8"></div>
+            <div class="bar9"></div>
+            <div class="bar10"></div>
+            <div class="bar11"></div>
+            <div class="bar12"></div>
+          </div> -->
+        </div>
+      </form>
+    </div>
+
+    <footer>Copyright &copy; All Right Reserved</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
